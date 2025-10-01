@@ -36,5 +36,6 @@ bloco.append(f"Tempo Médio de Espera: {total_espera / len(processos):.2f}")
 bloco.append(f"Tempo Médio de Retorno: {total_retorno / len(processos):.2f}")
 bloco.append("-------")
 
-with open("resultados.txt", "w", encoding="utf-8") as arquivo:
+with open("resultadosFCFS.txt", "w", encoding="utf-8") as arquivo:
+
     arquivo.write('\n'.join(bloco) + '\n')
